@@ -1,75 +1,133 @@
+// FONTS
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
 
+// COLOURS
 $white: #ffffff
 $blue: #2d6bb2
+$blue-light: #d3efff
+$blue-dark: #4e5b77
 $green: #60beb3
 $orange: #f59b19
+$gray: #ededed
 
+// BREAKPOINTS
+$mobile-min: 320px
+$mobile-max: 480px
+$tablet-min: 481px
+$tablet-max: 768px
+
+// MIXINS
+@mixin top-bar-button
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 152px
+    height: 60px
+    background-color: $green
+    color: $white
+    font-size: 13px
+    font-weight: 500
+    letter-spacing: 1px
+    text-transform: uppercase
+
+// GENERALS
 body
     font-family: 'Roboto', sans-serif
 
 a
     text-decoration: none
 
+// UTILS
 .container
     max-width: 940px
     margin: auto
+    @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+        max-width: 90%
+    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        max-width: 90%
+
 .underline
     text-decoration: underline
+
 .bold
     font-weight: 900
+
+// SECTIONS
+.logo-bar
+    display: none
+    align-items: center
+    justify-content: center
+    height: 60px
+    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        display: flex
 
 .top-bar
     background-color: $blue
     color: $white
-    .row
-        width: 100%
-        display: flex
-        justify-content: space-between
-        .menu
-            display: none
-            align-items: center
-            margin-left: 5%
-            a
-                color: $white
-                font-size: 13px
-                font-weight: 500
-                letter-spacing: 1px
-                text-transform: uppercase
-        .links
+    .container
+        @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+            min-width: 100%
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            min-width: 100%        
+        .row
+            width: 100%
             display: flex
-            align-items: center
-            ul
-                margin: 0
-                padding: 0
-                list-style: none
-                li
-                    display: inline
-                    a
-                        font-size: 14px
-                        color: $white
-                        margin-right: 40px
-        .button
-            a
+            justify-content: space-between
+            .menu
+                display: none
+                align-items: center
+                margin-left: 5%
+                @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                    display: flex
+                a
+                    font-size: 13px
+                    font-weight: 500
+                    letter-spacing: 1px
+                    text-transform: uppercase
+                    color: $white
+            .links
                 display: flex
                 align-items: center
-                justify-content: center
-                width: 152px
-                height: 60px
-                background-color: $green
-                color: $white
-                font-size: 13px
-                font-weight: 500
-                letter-spacing: 1px
-                text-transform: uppercase
+                @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+                    margin-left: 5%
+                @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                    display: none
+                ul
+                    margin: 0
+                    padding: 0
+                    list-style: none
+                    li
+                        display: inline
+                        a
+                            font-size: 14px
+                            color: $blue-light
+                            margin-right: 40px
+            .button
+                @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                    display: none
+                a
+                    @include top-bar-button
+            .button-mobile
+                display: none
+                @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                    display: block
+                a
+                    @include top-bar-button
 
 .nav-bar
     background-color: $white
+    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        display: none
     .row
         width: 100%
         height: 80px
         display: flex
         align-items: center
+        img
+            margin-right: 70px
+            @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+                margin-right: 35px
         ul
             list-style: none
             margin: 0
@@ -83,10 +141,14 @@ a
                     letter-spacing: 1px
                     text-transform: uppercase
                     margin-right: 36px
+                    @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+                        margin-right: 30px
 
 .mid-bar
     background-color: $orange
     color: $white
+    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        display: none
     .row
         width: 100%
         height: 40px
@@ -101,31 +163,125 @@ a
             letter-spacing: 1px
             text-transform: uppercase
 
+.hero
+    background: url('https://www.shutterstock.com/shutterstock/photos/2179136893/display_1500/stock-photo-blur-focus-of-white-open-space-office-interior-can-be-used-as-background-2179136893.jpg'), linear-gradient(to left, rgba(0, 0, 0, 0) 94%, rgba(4, 15, 32, 0.56))
+    background-size: cover
+    background-position: center center
+    padding: 72px 0 101px 0
+    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        padding: 53px 0 56px 0
+    .row
+        text-align: center
+        img
+            margin-bottom: 109px
+            @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                display: none
+        h1
+            font-family: 'Montserrat', sans-serif
+            font-size: 64px
+            font-weight: 600
+            letter-spacing: 1.78px
+            color : $white
+            margin-bottom: 14px
+            padding: 0
+            @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                font-size: 20px
+                letter-spacing: 0.56px
+                margin-bottom: 6px
+        h2
+            font-size: 28px
+            font-weight: 400
+            letter-spacing: 0.78px
+            color : $white
+            margin-bottom: 38px
+            padding: 0
+            @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                width: 194px
+                font-size: 14px
+                letter-spacing: 0.39px
+                margin: 0 auto 16px auto
+        a
+            display: inline-block
+            border-radius: 4px
+            background-color: $green
+            color: $white
+            padding: 12px 26px
+            font-size: 14px
+            font-weight: 500
+            line-height: 1.43
 
-        
-
-@media only screen and (min-width: 320px) and (max-width: 480px)
+.about
+    background-color: $gray
     .container
-        max-width: 90%
-    .top-bar
-        .container
-            min-width: 100%
-            .row
-                .menu
-                    display: flex                    
-                .links
-                    display: none
-    .nav-bar
-        display: none
-    .mid-bar
-        display: none
-    
-@media only screen and (min-width: 481px) and (max-width: 768px)
-    .container
-        max-width: 90%
-    .top-bar
-        .container
-            min-width: 100%
-            .row
-                .links
-                    margin-left: 5%
+        background-color: $white
+        transform: translateY(-50px) 
+        border-radius: 8px 8px 0 0
+        @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+            min-width: 95%
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            transform: translateY(-30px)
+        .items
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            padding: 26px 42px
+            @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                padding: 28px 9px
+            .item
+                text-align: center
+                img
+                    margin-bottom: 26px
+                    max-height: 70px
+                    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                        margin-bottom: 18px
+                p
+                    padding: 0
+                    margin: 0
+                    font-size: 18px
+                    line-height: 1.56
+                    @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+                        font-size: 14px
+                        line-height: 1.43
+                    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                        font-size: 10px
+                        line-height: normal
+        .onboarding
+            display: grid
+            grid-template-columns: 320px 1fr
+            @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                grid-template-columns: 1fr
+            .image
+                background: url('https://www.shutterstock.com/shutterstock/photos/2179136893/display_1500/stock-photo-blur-focus-of-white-open-space-office-interior-can-be-used-as-background-2179136893.jpg')
+                background-size: cover
+                background-position: center center
+                @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                    min-height: 175px
+            .text
+                background: linear-gradient(0deg, rgba($blue-dark, 0.92), rgba($blue-dark, 0.92)), url('https://www.shutterstock.com/shutterstock/photos/2179136893/display_1500/stock-photo-blur-focus-of-white-open-space-office-interior-can-be-used-as-background-2179136893.jpg')
+                background-size: cover
+                background-position: center center
+                color: $white
+                padding: 40px 40px 81px 40px
+                @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+                    padding: 40px
+                @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                    padding: 41px 26px
+                h2
+                    font-family: 'Montserrat', sans-serif
+                    font-size: 48px
+                    font-weight: 600
+                    letter-spacing: 1px
+                    margin: 0 0 20px 0
+                    @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+                        font-size: 36px
+                    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                        font-size: 24px
+                p
+                    font-size: 24px
+                    line-height: 1.42
+                    margin: 0
+                    @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+                        font-size: 20px
+                        line-height: 1.4
+                    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                        font-size: 18px
+                        line-height: 1.33
