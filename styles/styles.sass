@@ -7,9 +7,15 @@ $white: #ffffff
 $blue: #2d6bb2
 $blue-light: #d3efff
 $blue-dark: #4e5b77
+$blue-dark-text: #2c4fa0
+$blue-dark-section: #171b33
 $green: #60beb3
+$green-light: #60beb3
 $orange: #f59b19
+$orange-dark: #ff6a00
 $gray: #ededed
+$gray-dark: #1b2856
+$gray-dark-text: #1d1d1d
 
 // BREAKPOINTS
 $mobile-min: 320px
@@ -285,3 +291,181 @@ a
                     @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
                         font-size: 18px
                         line-height: 1.33
+
+.careers
+    padding: 40px 0 60px 0
+    h2
+        font-family: 'Montserrat', sans-serif
+        font-size: 48px
+        font-weight: bold
+        color: $gray-dark
+        margin: 0 0 48px 0
+        @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+            font-size: 36px
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            width: 176px
+            font-size: 24px
+            margin: 0 0 37px 0
+    .cards
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 20px
+        @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+            grid-template-columns: 1fr 1fr
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            grid-template-columns: 1fr
+        .card
+            max-width: 395px
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.28)
+            .header
+                background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url('https://www.shutterstock.com/shutterstock/photos/2179136893/display_1500/stock-photo-blur-focus-of-white-open-space-office-interior-can-be-used-as-background-2179136893.jpg')
+                background-size: cover
+                background-position: center center
+                padding: 138px 10px 10px 10px
+                border-radius: 4px 4px 0 0
+                .row
+                    display: flex
+                    justify-content: space-between
+                    .code
+                        font-size: 14px
+                        font-weight: 500
+                        line-height: 1.43
+                        color: $white
+                    .time
+                        display: flex
+                        align-items: center
+                        background-color: $orange-dark
+                        font-size: 9px
+                        font-weight: 500
+                        line-height: 1
+                        color: $white
+                        padding: 1px 6px
+                        border-radius: 1px
+            .title
+                background-color: $blue
+                padding: 10px
+                h3
+                    font-family: 'Montserrat', sans-serif
+                    font-size: 14px
+                    font-weight: 600
+                    color: $white
+                    margin: 0
+            .body
+                padding: 10px 10px 35px 10px
+                p
+                    font-size: 14px
+                    line-height: 1.36
+                    color: $gray-dark-text
+                    margin: 0 0 10px 0
+                .download
+                    display: block
+                    font-size: 14px
+                    font-weight: 500
+                    line-height: 1.43
+                    text-decoration: underline
+                    color: $blue-dark-text
+                    margin: 0 0 26px 0
+                .button
+                    display: block
+                    width: fit-content
+                    background-color: $green
+                    color: $white
+                    font-size: 14px
+                    line-height: 1.43
+                    padding: 8px 36px
+                    margin: 0 auto
+                    border-radius: 4px
+                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+
+.face-to-face
+    background: linear-gradient(to left, rgba($blue-dark-section, 0.79), rgba($blue-dark-section, 0.79)), url('https://www.shutterstock.com/shutterstock/photos/2179136893/display_1500/stock-photo-blur-focus-of-white-open-space-office-interior-can-be-used-as-background-2179136893.jpg')
+    background-size: cover
+    background-position: center center
+    color: $white
+    padding: 58px 0 66px 0
+    @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+        padding: 45px 0 55px 0
+    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        padding: 26px 0 62px 0
+    h2
+        font-family: 'Montserrat', sans-serif
+        font-size: 48px
+        font-weight: 600
+        letter-spacing: 1px
+        margin: 0 0 40px 0
+        @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+            font-size: 36px
+            letter-spacing: 0.75px
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            width: 216px
+            font-size: 24px
+            letter-spacing: 0.5px
+            margin: 0 0 20px 0
+    p
+        font-size: 24px
+        line-height: 1.46
+        text-align: center
+        margin: 0 0 40px 0
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            font-size: 18px
+            line-height: 1.33
+            margin: 0 0 30px 0
+    a
+        display: block
+        width: fit-content
+        background-color: $green-light
+        color: $white
+        font-size: 14px
+        font-weight: 500
+        line-height: 1.43
+        padding: 13px 62px
+        border-radius: 4px
+        margin: 0 auto
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            padding: 13px 42px
+
+.deals
+    padding: 44px 0 56px 0
+    @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+        padding: 40px 0 60px 0
+    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        padding: 60px 0 69px 0
+    h2
+        font-family: 'Montserrat', sans-serif
+        font-size: 48px
+        font-weight: 600
+        letter-spacing: 1px
+        color: $gray-dark
+        margin: 0 0 80px 0
+        @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+            font-size: 36px
+            letter-spacing: 0.75px
+            margin: 0 0 64px 0
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            font-size: 24px
+            letter-spacing: 0.5px
+            margin: 0 0 30px 0
+    .logos
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            grid-template-columns: 1fr 1fr
+        .logo
+            text-align: center
+            padding: 0 0 50px 0
+            @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                padding: 0 0 20px 0
+            img
+                width: 247px
+                height: auto
+                @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+                    width: 169px
+                @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                    width: 126px
+            a
+                display: block
+                font-size: 16px
+                font-weight: bold
+                color: $blue-dark-text
+                text-decoration: underline
+                margin: 10px 0 0 0

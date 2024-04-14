@@ -407,4 +407,262 @@ a {
     font-size: 18px;
     line-height: 1.33;
   }
+}
+
+.careers {
+  padding: 40px 0 60px 0;
+}
+.careers h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #1b2856;
+  margin: 0 0 48px 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .careers h2 {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .careers h2 {
+    width: 176px;
+    font-size: 24px;
+    margin: 0 0 37px 0;
+  }
+}
+.careers .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .careers .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .careers .cards {
+    grid-template-columns: 1fr;
+  }
+}
+.careers .cards .card {
+  max-width: 395px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.28);
+}
+.careers .cards .card .header {
+  background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("https://www.shutterstock.com/shutterstock/photos/2179136893/display_1500/stock-photo-blur-focus-of-white-open-space-office-interior-can-be-used-as-background-2179136893.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 138px 10px 10px 10px;
+  border-radius: 4px 4px 0 0;
+}
+.careers .cards .card .header .row {
+  display: flex;
+  justify-content: space-between;
+}
+.careers .cards .card .header .row .code {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  color: #ffffff;
+}
+.careers .cards .card .header .row .time {
+  display: flex;
+  align-items: center;
+  background-color: #ff6a00;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1;
+  color: #ffffff;
+  padding: 1px 6px;
+  border-radius: 1px;
+}
+.careers .cards .card .title {
+  background-color: #2d6bb2;
+  padding: 10px;
+}
+.careers .cards .card .title h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+.careers .cards .card .body {
+  padding: 10px 10px 35px 10px;
+}
+.careers .cards .card .body p {
+  font-size: 14px;
+  line-height: 1.36;
+  color: #1d1d1d;
+  margin: 0 0 10px 0;
+}
+.careers .cards .card .body .download {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-decoration: underline;
+  color: #2c4fa0;
+  margin: 0 0 26px 0;
+}
+.careers .cards .card .body .button {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #60beb3;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.43;
+  padding: 8px 36px;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.face-to-face {
+  background: linear-gradient(to left, rgba(23, 27, 51, 0.79), rgba(23, 27, 51, 0.79)), url("https://www.shutterstock.com/shutterstock/photos/2179136893/display_1500/stock-photo-blur-focus-of-white-open-space-office-interior-can-be-used-as-background-2179136893.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  padding: 58px 0 66px 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .face-to-face {
+    padding: 45px 0 55px 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .face-to-face {
+    padding: 26px 0 62px 0;
+  }
+}
+.face-to-face h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0 0 40px 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .face-to-face h2 {
+    font-size: 36px;
+    letter-spacing: 0.75px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .face-to-face h2 {
+    width: 216px;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    margin: 0 0 20px 0;
+  }
+}
+.face-to-face p {
+  font-size: 24px;
+  line-height: 1.46;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .face-to-face p {
+    font-size: 18px;
+    line-height: 1.33;
+    margin: 0 0 30px 0;
+  }
+}
+.face-to-face a {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #60beb3;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  padding: 13px 62px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .face-to-face a {
+    padding: 13px 42px;
+  }
+}
+
+.deals {
+  padding: 44px 0 56px 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .deals {
+    padding: 40px 0 60px 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .deals {
+    padding: 60px 0 69px 0;
+  }
+}
+.deals h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1b2856;
+  margin: 0 0 80px 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .deals h2 {
+    font-size: 36px;
+    letter-spacing: 0.75px;
+    margin: 0 0 64px 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .deals h2 {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    margin: 0 0 30px 0;
+  }
+}
+.deals .logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .deals .logos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.deals .logos .logo {
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .deals .logos .logo {
+    padding: 0 0 20px 0;
+  }
+}
+.deals .logos .logo img {
+  width: 247px;
+  height: auto;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .deals .logos .logo img {
+    width: 169px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .deals .logos .logo img {
+    width: 126px;
+  }
+}
+.deals .logos .logo a {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c4fa0;
+  text-decoration: underline;
+  margin: 10px 0 0 0;
 }/*# sourceMappingURL=styles.css.map */
