@@ -63,12 +63,19 @@ a
 .bold
     font-weight: 900
 
+.icon
+    display: inline-block
+    margin-right: 19px
+
 // SECTIONS
 .logo-bar
     display: none
     align-items: center
     justify-content: center
     height: 60px
+    img
+        width: auto
+        height: 24px
     @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
         display: flex
 
@@ -192,7 +199,7 @@ a
             font-weight: 600
             letter-spacing: 1.78px
             color : $white
-            margin-bottom: 14px
+            margin: 0 0 14px 0
             padding: 0
             @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
                 font-size: 20px
@@ -203,7 +210,7 @@ a
             font-weight: 400
             letter-spacing: 0.78px
             color : $white
-            margin-bottom: 38px
+            margin: 0 0 38px 0
             padding: 0
             @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
                 width: 194px
@@ -242,6 +249,7 @@ a
                     margin-bottom: 26px
                     max-height: 70px
                     @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                        max-height: 40px
                         margin-bottom: 18px
                 p
                     padding: 0
@@ -260,13 +268,15 @@ a
             @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
                 grid-template-columns: 1fr
             .image
-                background: url('/assets/background/hero.jpg')
+                background: url('/assets/about.jpg')
                 background-size: cover
                 background-position: center center
                 @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
                     min-height: 175px
+                    background: url('/assets/about-mobile.jpg')
+                    background-size: contain
             .text
-                background: linear-gradient(0deg, rgba($blue-dark, 0.92), rgba($blue-dark, 0.92)), url('/assets/background/hero.jpg')
+                background: linear-gradient(0deg, rgba($blue-dark, 0.92), rgba($blue-dark, 0.92)), url('/assets/background/about.jpg')
                 background-size: cover
                 background-position: center center
                 color: $white
@@ -299,6 +309,7 @@ a
 .careers
     padding: 40px 0 60px 0
     h2
+        display: inline-block
         font-family: 'Montserrat', sans-serif
         font-size: 48px
         font-weight: bold
@@ -322,11 +333,26 @@ a
             max-width: 395px
             box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.28)
             .header
-                background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url('/assets/background/hero.jpg')
                 background-size: cover
                 background-position: center center
                 padding: 138px 10px 10px 10px
                 border-radius: 4px 4px 0 0
+                &.administracion-de-empresas
+                    background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url('/assets/careers/administracion-de-empresas.jpg')
+                &.derecho
+                    background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url('/assets/careers/derecho.jpg')
+                &.pedagogia
+                    background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url('/assets/careers/pedagogia.jpg')
+                &.ingenieria-en-sistemas
+                    background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url('/assets/careers/ingenieria-en-sistemas.jpg')
+                &.comercio-internacional
+                    background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url('/assets/careers/comercio-internacional.jpg')
+                &.criminologia
+                    background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url('/assets/careers/criminologia.jpg')
+                &.psicologia-social
+                    background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url('/assets/careers/psicologia-social.jpg')
+                &.contaduria-publica
+                    background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url('/assets/careers/contaduria-publica.jpg')
                 .row
                     display: flex
                     justify-content: space-between
@@ -381,8 +407,8 @@ a
                     border-radius: 4px
                     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
 
-.face-to-face
-    background: linear-gradient(to left, rgba($blue-dark-section, 0.79), rgba($blue-dark-section, 0.79)), url('/assets/background/hero.jpg')
+.in-person
+    background: linear-gradient(to left, rgba($blue-dark-section, 0.79), rgba($blue-dark-section, 0.79)), url('/assets/background/in-person.jpg')
     background-size: cover
     background-position: center center
     color: $white
@@ -390,8 +416,12 @@ a
     @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
         padding: 45px 0 55px 0
     @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        background: linear-gradient(to left, rgba($blue-dark-section, 0.79), rgba($blue-dark-section, 0.79)), url('/assets/background/in-person-mobile.jpg')
+        background-size: 100% auto
+        background-position: bottom center
         padding: 26px 0 62px 0
     h2
+        display: inline-block
         font-family: 'Montserrat', sans-serif
         font-size: 48px
         font-weight: 600
@@ -429,18 +459,19 @@ a
             padding: 13px 42px
 
 .deals
-    padding: 44px 0 56px 0
+    padding: 44px 0 6px 0
     @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
-        padding: 40px 0 60px 0
+        padding: 40px 0 10px 0
     @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
-        padding: 60px 0 69px 0
+        padding: 60px 0 19px 0
     h2
+        display: inline-block
         font-family: 'Montserrat', sans-serif
         font-size: 48px
         font-weight: 600
         letter-spacing: 1px
         color: $gray-dark
-        margin: 0 0 80px 0
+        margin: 0 0 50px 0
         @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
             font-size: 36px
             letter-spacing: 0.75px
@@ -451,17 +482,18 @@ a
             margin: 0 0 30px 0
     .logos
         display: grid
+        align-items: center
+        justify-content: center
         grid-template-columns: 1fr 1fr 1fr
+        margin-bottom: 50px
         @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
             grid-template-columns: 1fr 1fr
         .logo
             text-align: center
-            padding: 0 0 50px 0
+            // padding: 0 0 50px 0
             @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
                 padding: 0 0 20px 0
             img
-                width: 247px
-                height: auto
                 @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
                     width: 169px
                 @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
@@ -485,6 +517,7 @@ a
         @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
             min-width: 100%
         h2
+            display: inline-block
             font-family: 'Montserrat', sans-serif
             font-size: 48px
             font-weight: 600
@@ -508,11 +541,14 @@ a
             @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
                 display: block
             .image
-                background: url('/assets/background/hero.jpg')
+                background: url('/assets/online.jpg')
                 background-size: cover
                 background-position: center center
                 @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
                     height: 160px
+                    background: url('/assets/online-mobile.jpg')
+                    background-size: cover
+                    background-position: top center
             .content
                 color: $gray-dark-text-light
                 padding: 15px 36px 44px 36px
@@ -547,12 +583,15 @@ a
                             margin: 0
 
 .contact
-    background: linear-gradient(to left, rgba($blue-dark-section, 0.5), rgba($blue-dark-section, 0.5)), url('/assets/background/hero.jpg')
+    background: url('/assets/background/contact.jpg')
     background-size: cover
     background-position: center center
     color: $white
     padding: 67px 0 43px 0
     @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        background: url('/assets/background/contact-mobile.jpg')
+        background-size: cover
+        background-position: top center
         padding: 32px 0 49px 0
     .cols
         display: grid
@@ -580,10 +619,9 @@ a
                 padding: 0
                 li
                     margin-bottom: 15px
-                    a
-                        font-size: 24px
-                        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
-                            font-size: 18px
+                    font-size: 24px
+                    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                        font-size: 18px
         .form
             background-color: $white
             padding: 40px 26px 36px 26px
