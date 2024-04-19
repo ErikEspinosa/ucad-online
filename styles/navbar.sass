@@ -1,4 +1,4 @@
-@import 'colours.sass', 'breakpoints.sass'
+@import 'constants.sass'
 
 @mixin top-bar-button
     display: flex
@@ -105,22 +105,3 @@
                     margin-right: 36px
                     @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
                         margin-right: 30px
-
-.mid-bar
-    background-color: $orange
-    color: $white
-    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
-        display: none
-    .row
-        width: 100%
-        height: 40px
-        display: flex
-        align-items: center
-        justify-content: center
-        p
-            margin: 0
-            padding: 0
-            font-size: 13px
-            font-weight: 500
-            letter-spacing: 1px
-            text-transform: uppercase
