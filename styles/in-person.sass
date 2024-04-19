@@ -1,0 +1,52 @@
+@import 'colours.sass', 'breakpoints.sass'
+
+.in-person
+    background: linear-gradient(to left, rgba($blue-dark-section, 0.79), rgba($blue-dark-section, 0.79)), url('../assets/backgrounds/in-person.jpg')
+    background-size: cover
+    background-position: center center
+    color: $white
+    padding: 58px 0 66px 0
+    @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+        padding: 45px 0 55px 0
+    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        background: linear-gradient(to left, rgba($blue-dark-section, 0.79), rgba($blue-dark-section, 0.79)), url('../assets/backgrounds/in-person-mobile.jpg')
+        background-size: 100% auto
+        background-position: bottom center
+        padding: 26px 0 62px 0
+    h2
+        display: inline-block
+        font-family: 'Montserrat', sans-serif
+        font-size: 48px
+        font-weight: 600
+        letter-spacing: 1px
+        margin: 0 0 40px 0
+        @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+            font-size: 36px
+            letter-spacing: 0.75px
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            width: 216px
+            font-size: 24px
+            letter-spacing: 0.5px
+            margin: 0 0 20px 0
+    p
+        font-size: 24px
+        line-height: 1.46
+        text-align: center
+        margin: 0 0 40px 0
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            font-size: 18px
+            line-height: 1.33
+            margin: 0 0 30px 0
+    a
+        display: block
+        width: fit-content
+        background-color: $green-light
+        color: $white
+        font-size: 14px
+        font-weight: 500
+        line-height: 1.43
+        padding: 13px 62px
+        border-radius: 4px
+        margin: 0 auto
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            padding: 13px 42px

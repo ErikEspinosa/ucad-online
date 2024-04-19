@@ -1,0 +1,49 @@
+@import 'colours.sass', 'breakpoints.sass'
+
+.deals
+    padding: 44px 0 6px 0
+    @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+        padding: 40px 0 10px 0
+    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        padding: 60px 0 19px 0
+    h2
+        display: inline-block
+        font-family: 'Montserrat', sans-serif
+        font-size: 48px
+        font-weight: 600
+        letter-spacing: 1px
+        color: $gray-dark
+        margin: 0 0 50px 0
+        @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+            font-size: 36px
+            letter-spacing: 0.75px
+            margin: 0 0 64px 0
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            font-size: 24px
+            letter-spacing: 0.5px
+            margin: 0 0 30px 0
+    .logos
+        display: grid
+        align-items: center
+        justify-content: center
+        grid-template-columns: 1fr 1fr 1fr
+        margin-bottom: 50px
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            grid-template-columns: 1fr 1fr
+        .logo
+            text-align: center
+            // padding: 0 0 50px 0
+            @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                padding: 0 0 20px 0
+            img
+                @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+                    width: 169px
+                @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                    width: 126px
+            a
+                display: block
+                font-size: 16px
+                font-weight: bold
+                color: $blue-dark-text
+                text-decoration: underline
+                margin: 10px 0 0 0

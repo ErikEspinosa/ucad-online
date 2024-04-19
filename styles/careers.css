@@ -1,0 +1,149 @@
+.careers {
+  padding: 40px 0 60px 0;
+}
+.careers h2 {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #1b2856;
+  margin: 0 0 48px 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .careers h2 {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .careers h2 {
+    width: 176px;
+    font-size: 24px;
+    margin: 0 0 37px 0;
+  }
+}
+.careers .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .careers .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .careers .cards {
+    grid-template-columns: 1fr;
+  }
+}
+.careers .cards .card {
+  max-width: 395px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.28);
+}
+.careers .cards .card .header {
+  padding: 138px 10px 10px 10px;
+  border-radius: 4px 4px 0 0;
+}
+.careers .cards .card .header.administracion-de-empresas {
+  background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/administracion-de-empresas.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.careers .cards .card .header.derecho {
+  background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/derecho.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.careers .cards .card .header.pedagogia {
+  background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/pedagogia.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.careers .cards .card .header.ingenieria-en-sistemas {
+  background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/ingenieria-en-sistemas.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.careers .cards .card .header.comercio-internacional {
+  background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/comercio-internacional.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.careers .cards .card .header.criminologia {
+  background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/criminologia.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.careers .cards .card .header.psicologia-social {
+  background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/psicologia-social.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.careers .cards .card .header.contaduria-publica {
+  background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/contaduria-publica.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.careers .cards .card .header .row {
+  display: flex;
+  justify-content: space-between;
+}
+.careers .cards .card .header .row .code {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  color: #ffffff;
+}
+.careers .cards .card .header .row .time {
+  display: flex;
+  align-items: center;
+  background-color: #ff6a00;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1;
+  color: #ffffff;
+  padding: 1px 6px;
+  border-radius: 1px;
+}
+.careers .cards .card .title {
+  background-color: #2d6bb2;
+  padding: 10px;
+}
+.careers .cards .card .title h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+.careers .cards .card .body {
+  padding: 10px 10px 35px 10px;
+}
+.careers .cards .card .body p {
+  font-size: 14px;
+  line-height: 1.36;
+  color: #1d1d1d;
+  margin: 0 0 10px 0;
+}
+.careers .cards .card .body .download {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-decoration: underline;
+  color: #2c4fa0;
+  margin: 0 0 26px 0;
+}
+.careers .cards .card .body .button {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #60beb3;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.43;
+  padding: 8px 36px;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=careers.css.map */

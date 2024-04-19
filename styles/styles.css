@@ -1,41 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  max-width: 940px;
-  margin: auto;
-}
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .container {
-    max-width: 90%;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    max-width: 90%;
-  }
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.bold {
-  font-weight: 900;
-}
-
-.icon {
-  display: inline-block;
-  margin-right: 19px;
-}
-
 .logo-bar {
   display: none;
   align-items: center;
@@ -225,7 +189,7 @@ a {
 }
 
 .hero {
-  background: url("../assets/background/hero.jpg"), linear-gradient(to left, rgba(0, 0, 0, 0) 94%, rgba(4, 15, 32, 0.56));
+  background: url("../assets/backgrounds/hero.jpg"), linear-gradient(to left, rgba(0, 0, 0, 0) 94%, rgba(4, 15, 32, 0.56));
   background-size: cover;
   background-position: center center;
   padding: 72px 0 101px 0;
@@ -358,19 +322,19 @@ a {
   }
 }
 .about .container .onboarding .image {
-  background: url("../assets/about.jpg");
+  background: url("../assets/about/about.jpg");
   background-size: cover;
   background-position: center center;
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .about .container .onboarding .image {
     min-height: 175px;
-    background: url("../assets/about-mobile.jpg");
+    background: url("../assets/about/about-mobile.jpg");
     background-size: contain;
   }
 }
 .about .container .onboarding .text {
-  background: linear-gradient(0deg, rgba(78, 91, 119, 0.92), rgba(78, 91, 119, 0.92)), url("../assets/background/about.jpg");
+  background: linear-gradient(0deg, rgba(78, 91, 119, 0.92), rgba(78, 91, 119, 0.92)), url("../assets/backgrounds/about.jpg");
   background-size: cover;
   background-position: center center;
   color: #ffffff;
@@ -464,34 +428,48 @@ a {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.28);
 }
 .careers .cards .card .header {
-  background-size: cover;
-  background-position: center center;
   padding: 138px 10px 10px 10px;
   border-radius: 4px 4px 0 0;
 }
 .careers .cards .card .header.administracion-de-empresas {
   background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/administracion-de-empresas.jpg");
+  background-size: cover;
+  background-position: top center;
 }
 .careers .cards .card .header.derecho {
   background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/derecho.jpg");
+  background-size: cover;
+  background-position: top center;
 }
 .careers .cards .card .header.pedagogia {
   background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/pedagogia.jpg");
+  background-size: cover;
+  background-position: top center;
 }
 .careers .cards .card .header.ingenieria-en-sistemas {
   background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/ingenieria-en-sistemas.jpg");
+  background-size: cover;
+  background-position: top center;
 }
 .careers .cards .card .header.comercio-internacional {
   background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/comercio-internacional.jpg");
+  background-size: cover;
+  background-position: top center;
 }
 .careers .cards .card .header.criminologia {
   background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/criminologia.jpg");
+  background-size: cover;
+  background-position: top center;
 }
 .careers .cards .card .header.psicologia-social {
   background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/psicologia-social.jpg");
+  background-size: cover;
+  background-position: top center;
 }
 .careers .cards .card .header.contaduria-publica {
   background: linear-gradient(to bottom, rgba(7, 7, 76, 0.16) 34%, rgba(2, 0, 19, 0.93) 99%), url("../assets/careers/contaduria-publica.jpg");
+  background-size: cover;
+  background-position: top center;
 }
 .careers .cards .card .header .row {
   display: flex;
@@ -558,7 +536,7 @@ a {
 }
 
 .in-person {
-  background: linear-gradient(to left, rgba(23, 27, 51, 0.79), rgba(23, 27, 51, 0.79)), url("../assets/background/in-person.jpg");
+  background: linear-gradient(to left, rgba(23, 27, 51, 0.79), rgba(23, 27, 51, 0.79)), url("../assets/backgrounds/in-person.jpg");
   background-size: cover;
   background-position: center center;
   color: #ffffff;
@@ -571,7 +549,7 @@ a {
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .in-person {
-    background: linear-gradient(to left, rgba(23, 27, 51, 0.79), rgba(23, 27, 51, 0.79)), url("../assets/background/in-person-mobile.jpg");
+    background: linear-gradient(to left, rgba(23, 27, 51, 0.79), rgba(23, 27, 51, 0.79)), url("../assets/backgrounds/in-person-mobile.jpg");
     background-size: 100% auto;
     background-position: bottom center;
     padding: 26px 0 62px 0;
@@ -764,14 +742,14 @@ a {
   }
 }
 .online .container .onboarding .image {
-  background: url("../assets/online.jpg");
+  background: url("../assets/online/online.jpg");
   background-size: cover;
   background-position: center center;
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .online .container .onboarding .image {
     height: 160px;
-    background: url("../assets/online-mobile.jpg");
+    background: url("../assets/online/online-mobile.jpg");
     background-size: cover;
     background-position: top center;
   }
@@ -826,7 +804,7 @@ a {
 }
 
 .contact {
-  background: url("../assets/background/contact.jpg");
+  background: url("../assets/backgrounds/contact.jpg");
   background-size: cover;
   background-position: center center;
   color: #ffffff;
@@ -834,7 +812,7 @@ a {
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .contact {
-    background: url("../assets/background/contact-mobile.jpg");
+    background: url("../assets/backgrounds/contact-mobile.jpg");
     background-size: cover;
     background-position: top center;
     padding: 32px 0 49px 0;
@@ -1053,4 +1031,40 @@ footer .address p {
 .bottom-bar .whatsapp {
   background-image: linear-gradient(to bottom, #369942 0%, #6ac543);
   color: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 940px;
+  margin: auto;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 19px;
 }/*# sourceMappingURL=styles.css.map */

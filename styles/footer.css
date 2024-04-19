@@ -1,0 +1,127 @@
+footer {
+  background-color: #171b33;
+  color: #ffffff;
+  padding: 46px 0 54px 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  footer {
+    padding: 45px 0;
+  }
+}
+footer .cols {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: auto auto;
+  margin-bottom: 59px;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  footer .cols {
+    grid-template-columns: 70% 30%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  footer .cols {
+    display: block;
+  }
+}
+footer .cols .academic-offer {
+  grid-area: 1/1/3/2;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  footer .cols .academic-offer {
+    grid-area: 1/1/3/2;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  footer .cols .academic-offer {
+    margin-bottom: 30px;
+  }
+}
+footer .cols .about-ucad {
+  grid-area: 1/2/3/3;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  footer .cols .about-ucad {
+    grid-area: 1/2/2/3;
+    margin-bottom: 45px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  footer .cols .about-ucad {
+    margin-bottom: 30px;
+  }
+}
+footer .cols .contact-us {
+  grid-area: 1/3/3/4;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  footer .cols .contact-us {
+    grid-area: 2/2/3/3;
+  }
+}
+footer .cols h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+footer .cols ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .cols ul li {
+  margin: 0 0 10px 0;
+}
+footer .cols ul li a {
+  font-size: 14px;
+  line-height: 1;
+  color: #ffffff;
+}
+footer .address {
+  text-align: center;
+}
+footer .address p {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.bottom-bar {
+  background-color: #091024;
+  padding: 18px 0;
+  text-align: center;
+}
+.bottom-bar a {
+  display: inline-block;
+  width: 200px;
+  height: 45px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.65);
+  font-size: 18px;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .bottom-bar a {
+    width: 130px;
+  }
+}
+.bottom-bar .call-us {
+  background-image: linear-gradient(to bottom, #3370ff, #5091f3 100%);
+  color: #ffffff;
+  margin-right: 45px;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .bottom-bar .call-us {
+    margin-right: 40px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .bottom-bar .call-us {
+    margin-right: 20px;
+  }
+}
+.bottom-bar .whatsapp {
+  background-image: linear-gradient(to bottom, #369942 0%, #6ac543);
+  color: #ffffff;
+}/*# sourceMappingURL=footer.css.map */

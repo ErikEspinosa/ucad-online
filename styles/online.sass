@@ -1,0 +1,77 @@
+@import 'colours.sass', 'breakpoints.sass'
+
+.online
+    background-color: $gray
+    padding: 80px 0
+    @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+        padding: 45px 0 77px 0
+    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        padding: 40px 0 31px 0
+    .container
+        @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+            min-width: 100%
+        h2
+            display: inline-block
+            font-family: 'Montserrat', sans-serif
+            font-size: 48px
+            font-weight: 600
+            letter-spacing: 1px
+            color: $gray-dark
+            margin: 0 0 36px 0
+            @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+                width: 470px
+                font-size: 36px
+                letter-spacing: 0.75px
+            @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                width: 250px
+                font-size: 24px
+                letter-spacing: 0.5px
+        .onboarding
+            background-color: $white
+            display: grid
+            grid-template-columns: 320px 1fr
+            @media only screen and (min-width: $tablet-min) and (max-width: $tablet-max)
+                grid-template-columns: 212px 1fr
+            @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                display: block
+            .image
+                background: url('../assets/online/online.jpg')
+                background-size: cover
+                background-position: center center
+                @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                    height: 160px
+                    background: url('../assets/online/online-mobile.jpg')
+                    background-size: cover
+                    background-position: top center
+            .content
+                color: $gray-dark-text-light
+                padding: 15px 36px 44px 36px
+                @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                    padding: 20px 10px 44px 10px
+                h3
+                    font-size: 18px
+                    font-weight: bold
+                    line-height-step: 1.61
+                    margin: 0 0 20px 0
+                    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                        width: 300px
+                .bullet
+                    display: grid
+                    grid-template-columns: 15% 85%
+                    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+                        grid-template-columns: 20% 80%
+                        padding: 0 40px 0 15px
+                    .icon
+                        text-align: center
+                        margin: 20px 0 0 0
+                    .text
+                        padding: 0 0 20px 20px
+                        h4
+                            font-size: 18px
+                            font-weight: bold
+                            line-height: 1.61
+                            margin: 0 0 4px 0
+                        p
+                            font-size: 14px
+                            line-height: 1.29
+                            margin: 0
