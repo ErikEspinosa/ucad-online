@@ -53,10 +53,14 @@ footer
             font-size: 14px
             line-height: 1
 
-.bottom-bar
+#bottom-bar
     background-color: $gray-ultradark
     padding: 18px 0
     text-align: center
+    @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max)
+        position: fixed
+        bottom: 0
+        width: 100%
     a
         display: inline-block
         width: 200px

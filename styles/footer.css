@@ -86,12 +86,19 @@ footer .address p {
   line-height: 1;
 }
 
-.bottom-bar {
+#bottom-bar {
   background-color: #091024;
   padding: 18px 0;
   text-align: center;
 }
-.bottom-bar a {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+#bottom-bar a {
   display: inline-block;
   width: 200px;
   height: 45px;
@@ -102,26 +109,26 @@ footer .address p {
   box-sizing: border-box;
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .bottom-bar a {
+  #bottom-bar a {
     width: 130px;
   }
 }
-.bottom-bar .call-us {
+#bottom-bar .call-us {
   background-image: linear-gradient(to bottom, #3370ff, #5091f3 100%);
   color: #ffffff;
   margin-right: 45px;
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .bottom-bar .call-us {
+  #bottom-bar .call-us {
     margin-right: 40px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .bottom-bar .call-us {
+  #bottom-bar .call-us {
     margin-right: 20px;
   }
 }
-.bottom-bar .whatsapp {
+#bottom-bar .whatsapp {
   background-image: linear-gradient(to bottom, #369942 0%, #6ac543);
   color: #ffffff;
 }/*# sourceMappingURL=footer.css.map */
