@@ -1,3 +1,25 @@
+const menuButton = document.getElementById("menu-button");
+var isMenuButtonActive = false;
+
+menuButton.addEventListener('click', () => {
+    const arrowDown = menuButton.querySelector('.arrow-down');
+    const overlay = document.querySelector('.overlay');
+    const menuList = document.querySelector('#menu-list');
+
+    if (!isMenuButtonActive) {
+        arrowDown && arrowDown.classList.add('rotate')
+        if (overlay) overlay.style.display = 'block';
+        if (menuList) menuList.style.display = 'block';
+        
+    } else {
+        arrowDown && arrowDown.classList.remove('rotate');
+        if (overlay) overlay.style.display = 'none';
+        if (menuList) menuList.style.display = 'none';
+    }
+    isMenuButtonActive = !isMenuButtonActive;
+});
+
+
 const isMobile = () => {
     const screenWidth = window.innerWidth;
     const validation = screenWidth && screenWidth >= 320 && screenWidth <= 480;
@@ -61,3 +83,4 @@ window.addEventListener('resize', () => {
         resetMargin('bottom', 'footer');
     }
 });
+

@@ -6,20 +6,22 @@
     <title>UCAD en línea</title>
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/sections.css">
-    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
+    <div class="overlay"></div>
+
     <nav id="navbar">
         <div class="logo-bar">
-            <img src="./assets/logo.svg" alt="Logo" />
+            <img src="./assets/logo.svg" alt="Logo" width="251" height="31" />
         </div>
         <div class="top-bar">
             <div class="container">
                 <div class="row">
                     <div class="menu">
-                        <a href="#" title="MENÚ">MENÚ</a>
+                        <div id="menu-button">
+                            <div>MENÚ</div>
+                            <img src="./assets/arrow-down.svg" alt="MENÚ" class="arrow-down" width="12" height="14.94">
+                        </div>
                     </div>
                     <div class="links">
                         <ul>
@@ -36,17 +38,26 @@
                 </div>
             </div>
         </div>
-
         <div class="nav-bar">
             <div class="container">
                 <div class="row">
-                    <img src="./assets/logo.svg" alt="Logo" />
+                    <img src="./assets/logo.svg" alt="Logo" width="251" height="31" />
                     <ul>
                         <li><a href="#" title="LICENCIATURAS EN LÍNEA">LICENCIATURAS EN LÍNEA</a></li>
                         <li><a href="#" title="Modelo Presencial">Modelo Presencial</a></li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div id="menu-list">
+            <ul>
+                <li>
+                    <a href="#" title="LICENCIATURAS EN LÍNEA">LICENCIATURAS EN LÍNEA</a>
+                </li>
+                <li>
+                    <a href="#" title="Modelo Presencial">Modelo Presencial</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -74,17 +85,17 @@
             <div class="container">
                 <div class="items">
                     <div class="item">
-                        <img src="./assets/about-detail/item-1.svg" alt="Item 1">
+                        <img src="./assets/about-detail/item-1.svg" alt="Item 1" width="67" height="64">
                         <p>2 materias cada 5 semanas<br> 
                         + 1 semana de evaluación</p>
                     </div>
                     <div class="item">
-                        <img src="./assets/about-detail/item-2.svg" alt="Item 2">
+                        <img src="./assets/about-detail/item-2.svg" alt="Item 2" width="77" height="64">
                         <p>Calses en video OnDemand<br>
                         y clases en vivo opcionales</p>
                     </div>
                     <div class="item">
-                        <img src="./assets/about-detail/item-3.svg" alt="Item 3">
+                        <img src="./assets/about-detail/item-3.svg" alt="Item 3" width="71.91" height="70">
                         <p>Profesores y tutores<br>
                         que te compañan 24/7</p>
                     </div>
@@ -109,8 +120,10 @@
 
         <div class="professional-profile">
             <div class="container">
-                <img src="./assets/icon-white.svg" alt="Perfil Profesional" class="icon">
-                <h2>Perfil Profesional</h2>
+                <div class="title">
+                    <img src="./assets/icon-white.svg" alt="Perfil Profesional" class="icon" width="30" height="31">
+                    <h2>Perfil Profesional</h2>
+                </div>
                 <div class="cards">
                     <div class="card">
                         <div class="header perfil-ingreso"></div>
@@ -154,10 +167,10 @@
             <div class="container">
                 <div class="row">
                     <div class="content">
-                        <img src="./assets/logo-white.svg" alt="ucad | EN LINEA" class="logo" />
+                        <img src="./assets/logo-white.svg" alt="ucad | EN LINEA" class="logo" width="246" height="31" />
                         <div class="title">
                             <h2>Mejora tu perfil profesional</h2>
-                            <img src="./assets/diploma.png" alt="Diploma" class="diploma">
+                            <img src="./assets/diploma.png" alt="Diploma" class="diploma" width="95" height="92">
                         </div>
                         <p>Con el objetivo de que egreses con un perfil profesional más competitivo, el programa incluye <span class="orange-text">4 Diplomados Profesionales con Valor Curricular sin costo*</span> integrados en tu plan de estudios</p>
                         <p class="small">El precio de los diplomados es de $7,000, por tiempo limitado se incluyen sin costo al momento de inscribirte</p>
@@ -169,8 +182,10 @@
     
         <div class="careers">
             <div class="container">
-                <img src="./assets/icon-blue.svg" class="icon" alt="Licenciaturas en Línea">
-                <h2>Otros progamas de interés</h2>
+                <div class="title">
+                    <img src="./assets/icon-blue.svg" class="icon" alt="Licenciaturas en Línea" width="30" height="30">
+                    <h2>Otros progamas de interés</h2>
+                </div>
                 <div class="cards">
                     <div class="card">
                         <div class="header administracion-de-empresas">
@@ -226,8 +241,10 @@
     
         <div class="in-person">
             <div class="container">
-                <img src="./assets/icon-white.svg" class="icon" alt="Modelo Presencial UCAD">
-                <h2>Modelo Presencial UCAD</h2>
+                <div class="title">
+                    <img src="./assets/icon-white.svg" class="icon" alt="Modelo Presencial UCAD" width="30" height="31">
+                    <h2>Modelo Presencial UCAD</h2>
+                </div>
                 <p>UCAD tiene para ti <span class="bold">programas académicos presenciales en la Ciudad de México</span>. ¡Tú eliges el turno en el que quieres asistir a tus clases! Horarios que se adaptan a tus necesidades: matutino, vespertino, ejecutivo y sabatino</p>
                 <a href="#" title="Conoce la oferta académica">Conoce la oferta académica</a>
             </div>
@@ -235,37 +252,41 @@
     
         <div class="deals">
             <div class="container">
-                <img src="./assets/icon-blue.svg" class="icon" alt="Convenios UCAD">
-                <h2>Convenios UCAD</h2>
+                <div class="title">
+                    <img src="./assets/icon-blue.svg" class="icon" alt="Convenios UCAD" width="30" height="30">
+                    <h2>Convenios UCAD</h2>
+                </div>
                 <div class="logos">
                     <div class="logo">
-                        <img src="./assets/deals/logo-1.png" alt="Pro Meritum">
+                        <img src="./assets/deals/logo-1.png" alt="Pro Meritum" width="268" height="57">
                     </div>
                     <div class="logo">
-                        <img src="./assets/deals/logo-2.png" alt="alafec">
+                        <img src="./assets/deals/logo-2.png" alt="alafec" width="268" height="87">
                     </div>
                     <div class="logo">
-                        <img src="./assets/deals/logo-3.png" alt="imjuve">
+                        <img src="./assets/deals/logo-3.png" alt="imjuve" width="268" height="138">
                     </div>
                     <div class="logo">
-                        <img src="./assets/deals/logo-4.png" alt="ANFECA">
+                        <img src="./assets/deals/logo-4.png" alt="ANFECA" width="137" height="123">
                     </div>
                     <div class="logo">
-                        <img src="./assets/deals/logo-5.png" alt="Probecarios">
+                        <img src="./assets/deals/logo-5.png" alt="Probecarios" width="299" height="57">
                     </div>
                     <div class="logo">
-                        <img src="./assets/deals/logo-6.png" alt="AMID">
+                        <img src="./assets/deals/logo-6.png" alt="AMID" width="209" height="111">
                     </div>
                 </div>
-                <img src="./assets/icon-blue.svg" class="icon" alt="Prensa">
-                <h2>Prensa</h2>
+                <div class="title">
+                    <img src="./assets/icon-blue.svg" class="icon" alt="Prensa" width="30" height="30">
+                    <h2>Prensa</h2>
+                </div>
                 <div class="logos">
                     <div class="logo">
-                        <img src="./assets/deals/logo-7.png" alt="El Universal">
+                        <img src="./assets/deals/logo-7.png" alt="El Universal" width="275" height="28">
                         <a href="#" title="Ver la nota">Ver la nota</a>
                     </div>
                     <div class="logo">
-                        <img src="./assets/deals/logo-8.png" alt="Milenio">
+                        <img src="./assets/deals/logo-8.png" alt="Milenio" width="179" height="33">
                         <a href="#" title="Ver la nota">Ver la nota</a>
                     </div>
                 </div>
