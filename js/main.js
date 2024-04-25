@@ -1,24 +1,48 @@
 const menuButton = document.getElementById("menu-button");
+const menuList = document.querySelector('#menu-list');
+const menuLinks = document.querySelectorAll('#menu-list a');
+const arrowDown = menuButton.querySelector('.arrow-down');
+const overlay = document.querySelector('.overlay');
 var isMenuButtonActive = false;
 
-menuButton.addEventListener('click', () => {
-    const arrowDown = menuButton.querySelector('.arrow-down');
-    const overlay = document.querySelector('.overlay');
-    const menuList = document.querySelector('#menu-list');
+const openMenu = () => {
+    arrowDown && arrowDown.classList.add('rotate')
+    if (overlay) overlay.style.display = 'block';
+    if (menuList) menuList.style.display = 'block';
+    isMenuButtonActive = true;
+}
 
-    if (!isMenuButtonActive) {
-        arrowDown && arrowDown.classList.add('rotate')
-        if (overlay) overlay.style.display = 'block';
-        if (menuList) menuList.style.display = 'block';
-        
-    } else {
-        arrowDown && arrowDown.classList.remove('rotate');
-        if (overlay) overlay.style.display = 'none';
-        if (menuList) menuList.style.display = 'none';
-    }
-    isMenuButtonActive = !isMenuButtonActive;
+const closeMenu = () => {
+    arrowDown && arrowDown.classList.remove('rotate');
+    if (overlay) overlay.style.display = 'none';
+    if (menuList) menuList.style.display = 'none';
+    isMenuButtonActive = false;
+}
+
+const toggleMenu = () => {
+    isMenuButtonActive ? closeMenu() : openMenu();
+}
+
+menuButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleMenu();
 });
 
+if (menuLinks.length > 0) {
+    for (let index = 0; index < menuLinks.length; index++) {
+        menuLinks[index].addEventListener('click', () => {
+            closeMenu();
+        })
+    }
+}
+
+document.addEventListener('click', (e) => {
+    const element = e.target;
+    if (isMenuButtonActive && (element != menuList || element != menuButton)) {
+        closeMenu();
+    }
+});
 
 const isMobile = () => {
     const screenWidth = window.innerWidth;
